@@ -1,8 +1,24 @@
 # copy-rich-link
 
+[![Firefox Add-ons](https://img.shields.io/badge/Firefox_Add--ons-Install-FF7139?logo=firefox-browser&logoColor=white)](https://addons.mozilla.org/pt-BR/firefox/addon/copy-rich-link/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Places a button directly inside the address bar (right next to Reader Mode and Bookmark Star) that copies the current page's URL and title simultaneously as:
 1. **Rich Text Link (`HTML`)**: When pasted into Microsoft Teams, Outlook, Word, Slack, or Google Docs, it pastes as the clickable page title.
 2. **Markdown Format (`[Page Title](URL)`)**: When pasted into Markdown editors (Discord, Obsidian, GitHub, VS Code, Reddit, Notepad), it automatically pastes as formatted Markdown.
+
+---
+
+## Installation
+
+### Official Store (Recommended)
+Install directly from the official Mozilla Add-ons store:
+👉 **[Get copy-rich-link on Firefox Add-ons](https://addons.mozilla.org/pt-BR/firefox/addon/copy-rich-link/)**
+
+### Developer / Local Loading
+1. Open a tab in Firefox: `about:debugging#/runtime/this-firefox`
+2. Click **Load Temporary Add-on...**
+3. Select [manifest.json](file:///C:/Users/andre/Andreusd/Projetos/copy-rich-link/manifest.json) in this directory.
 
 ---
 
@@ -15,19 +31,3 @@ Places a button directly inside the address bar (right next to Reader Mode and B
   - The address bar icon temporarily turns into a green checkmark (`✓ Copied Rich Link!`).
   - An elegant floating dark toast confirms the copied title and URL.
 - **Keyboard Shortcut**: Press `Alt + Shift + C` anywhere to copy immediately (customizable via `about:addons` ➔ ⚙️ ➔ *Manage Extension Shortcuts*).
-
----
-
-## How to Install / Load in Firefox
-
-### Quick Load (Temporary Add-on)
-1. In Firefox, open:
-   ```text
-   about:debugging#/runtime/this-firefox
-   ```
-2. Click **Load Temporary Add-on...**
-3. Select [manifest.json](file:///C:/Users/andre/Andreusd/Projetos/copy-rich-link/manifest.json) in:
-   ```text
-   C:\Users\andre\Andreusd\Projetos\copy-rich-link\manifest.json
-   ```
-4. The button appears immediately in your address bar!
