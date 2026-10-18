@@ -10,11 +10,11 @@ Places a button directly inside the Firefox address bar (right next to Reader Mo
 
 - **Address Bar Integration**: Lives directly inside the URL bar next to the native Reader View and Bookmark star.
 - **Dual Clipboard Format**: Copies both `text/html` and `text/plain` simultaneously in one click.
-- **Alt Text / Tooltip**: `Copy Rich Link (Alt+C)`.
+- **Alt Text / Tooltip**: `Copy Rich Link (Alt+Shift+C)`.
 - **Visual Feedback**:
   - The address bar icon temporarily turns into a green checkmark (`✓ Copied Rich Link!`).
   - An elegant floating dark toast confirms the copied title and URL.
-- **Keyboard Shortcut**: Press `Alt + C` anywhere to copy immediately.
+- **Keyboard Shortcut**: Press `Alt + Shift + C` anywhere to copy immediately (customizable via `about:addons` ➔ ⚙️ ➔ *Manage Extension Shortcuts*).
 
 ---
 
