@@ -7,6 +7,10 @@ Places a button directly inside the address bar (right next to Reader Mode and B
 1. **Rich Text Link (`HTML`)**: When pasted into Microsoft Teams, Outlook, Word, Slack, or Google Docs, it pastes as the clickable page title.
 2. **Markdown Format (`[Page Title](URL)`)**: When pasted into Markdown editors (Discord, Obsidian, GitHub, VS Code, Reddit, Notepad), it automatically pastes as formatted Markdown.
 
+<p align="center">
+  <img src="assets/screenshot.png" alt="copy-rich-link in Firefox address bar" width="400">
+</p>
+
 ---
 
 ## Installation
