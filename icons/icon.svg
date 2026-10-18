@@ -2,10 +2,12 @@
   <style>
     path {
       stroke: #2b2a33;
+      stroke: context-fill;
     }
     @media (prefers-color-scheme: dark) {
       path {
         stroke: #fbfbfe;
+        stroke: context-fill;
       }
     }
   </style>

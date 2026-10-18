@@ -18,11 +18,7 @@
     "clipboardWrite"
   ],
   "page_action": {
-    "default_icon": {
-      "16": "icons/icon-16.png",
-      "32": "icons/icon-32.png",
-      "48": "icons/icon-48.png"
-    },
+    "default_icon": "icons/icon.svg",
     "default_title": "Copy Rich Link (Alt+Shift+C)",
     "show_matches": ["<all_urls>"]
   },

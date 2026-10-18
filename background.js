@@ -191,22 +191,14 @@ async function handleCopy(tab) {
 
   browser.pageAction.setIcon({
     tabId: tab.id,
-    path: {
-      "16": "icons/check-16.png",
-      "32": "icons/check-32.png",
-      "48": "icons/check-48.png",
-    },
+    path: "icons/check.svg",
   });
 
   setTimeout(() => {
     browser.pageAction.setTitle({ tabId: tab.id, title: originalTitle });
     browser.pageAction.setIcon({
       tabId: tab.id,
-      path: {
-        "16": "icons/icon-16.png",
-        "32": "icons/icon-32.png",
-        "48": "icons/icon-48.png",
-      },
+      path: "icons/icon.svg",
     });
   }, 1500);
 
