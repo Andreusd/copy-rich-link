@@ -5,7 +5,12 @@
   "description": "Places a button inside the address bar to copy the page link as rich text (for MS Teams, Outlook, Word) and Markdown.",
   "browser_specific_settings": {
     "gecko": {
-      "id": "firefox-copy-rich-link@andre.local"
+      "id": "firefox-copy-rich-link@andreusd.com",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   },
   "permissions": [
