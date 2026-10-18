@@ -103,15 +103,50 @@ function copyPageLinkInTab() {
 
     const truncatedTitle = pageTitle.length > 35 ? pageTitle.substring(0, 32) + "..." : pageTitle;
 
-    toast.innerHTML = `
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <div style="line-height:1.35; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
-        <div><b>Copied as Rich Link!</b></div>
-        <div style="font-size:11px; opacity:0.8; overflow:hidden; text-overflow:ellipsis;">[${truncatedTitle}](${pageUrl})</div>
-      </div>
-    `;
+    // Build toast contents safely using standard DOM methods (no innerHTML)
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("width", "18");
+    svg.setAttribute("height", "18");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "#2ecc71");
+    svg.setAttribute("stroke-width", "2.5");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+    svg.style.flexShrink = "0";
+
+    const polyline = document.createElementNS(svgNS, "polyline");
+    polyline.setAttribute("points", "20 6 9 17 4 12");
+    svg.appendChild(polyline);
+
+    const textContainer = document.createElement("div");
+    Object.assign(textContainer.style, {
+      lineHeight: "1.35",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      whiteSpace: "nowrap",
+    });
+
+    const titleDiv = document.createElement("div");
+    const boldTitle = document.createElement("b");
+    boldTitle.textContent = "Copied as Rich Link!";
+    titleDiv.appendChild(boldTitle);
+
+    const subDiv = document.createElement("div");
+    Object.assign(subDiv.style, {
+      fontSize: "11px",
+      opacity: "0.8",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+    });
+    subDiv.textContent = `[${truncatedTitle}](${pageUrl})`;
+
+    textContainer.appendChild(titleDiv);
+    textContainer.appendChild(subDiv);
+
+    toast.appendChild(svg);
+    toast.appendChild(textContainer);
 
     document.body.appendChild(toast);
 
