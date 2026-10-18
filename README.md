@@ -1,6 +1,6 @@
-# firefox-copy-rich-link
+# copy-rich-link
 
-Places a button directly inside the Firefox address bar (right next to Reader Mode and Bookmark Star) that copies the current page's URL and title simultaneously as:
+Places a button directly inside the address bar (right next to Reader Mode and Bookmark Star) that copies the current page's URL and title simultaneously as:
 1. **Rich Text Link (`HTML`)**: When pasted into Microsoft Teams, Outlook, Word, Slack, or Google Docs, it pastes as the clickable page title.
 2. **Markdown Format (`[Page Title](URL)`)**: When pasted into Markdown editors (Discord, Obsidian, GitHub, VS Code, Reddit, Notepad), it automatically pastes as formatted Markdown.
 
@@ -26,8 +26,8 @@ Places a button directly inside the Firefox address bar (right next to Reader Mo
    about:debugging#/runtime/this-firefox
    ```
 2. Click **Load Temporary Add-on...**
-3. Select [manifest.json](file:///C:/Users/andre/Andreusd/Projetos/firefox-copy-rich-link/manifest.json) in:
+3. Select [manifest.json](file:///C:/Users/andre/Andreusd/Projetos/copy-rich-link/manifest.json) in:
    ```text
-   C:\Users\andre\Andreusd\Projetos\firefox-copy-rich-link\manifest.json
+   C:\Users\andre\Andreusd\Projetos\copy-rich-link\manifest.json
    ```
 4. The button appears immediately in your address bar!

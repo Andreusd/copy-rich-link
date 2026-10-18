@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "firefox-copy-rich-link",
+  "name": "copy-rich-link",
   "version": "1.0.0",
   "description": "Places a button inside the address bar to copy the page link as rich text (for MS Teams, Outlook, Word) and Markdown.",
   "browser_specific_settings": {
     "gecko": {
-      "id": "firefox-copy-rich-link@andreusd.com",
+      "id": "copy-rich-link@andreusd.com",
       "data_collection_permissions": {
         "required": [
           "none"

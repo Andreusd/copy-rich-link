@@ -1,5 +1,5 @@
 /**
- * Background script for firefox-copy-rich-link
+ * Background script for copy-rich-link
  */
 
 // Function injected into the active tab to copy content and display a toast
