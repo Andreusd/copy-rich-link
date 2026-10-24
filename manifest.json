@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "copy-rich-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Places a button inside the address bar to copy the page link as rich text (for MS Teams, Outlook, Word) and Markdown.",
   "browser_specific_settings": {
     "gecko": {
